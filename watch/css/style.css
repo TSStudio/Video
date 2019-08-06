@@ -1,0 +1,68 @@
+@import url("https://at.alicdn.com/t/font_1328346_m4giiqsaho.css");
+@import url("https://g.alicdn.com/de/prismplayer/2.8.2/skins/default/aliplayer-min.css");
+*{
+    font-family:"微软雅黑","Microsoft Yahei UI","思源黑体","Source Han Sans CN","黑体","Times New Roman",sans-serif;
+}
+html,body{height:100%;}/*用来获取完整高度 内容多时可删除*/
+body{
+    margin:0;
+}
+.topbar{
+    width:70%;
+    height:70px;
+    margin:0 auto 0 auto;
+    border-style:none solid solid solid;
+    border-width:2px;
+    border-color:#aaaaaa;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    background-color:#eaeaea;
+}
+.doctitle{
+    font-size:2.3em;
+    
+}
+.topelement,p,font{
+    display:inline;
+}
+.bigicon{
+    font-size:2.1em;
+}
+#region{
+    position: absolute;
+    top:10px;
+}
+a{
+    text-decoration: none;
+    color:black;
+    background-color: rgba(255,255,255,0.6);
+}
+a:hover{
+    background-color: rgba(255,255,255,0.9);
+}
+#userinfo{
+    float:right;
+}
+#infobar{
+    width:70%;
+    margin:5px auto 5px auto;
+}
+h4{
+    margin-bottom:10px;
+}
+h6{
+    display:inline;
+}
+#desbox{
+    width:70%;
+    margin:5px auto 5px auto;
+    border:solid;
+    border-width:2px;
+    border-color:#aaaaaa;
+    border-radius:5px;
+    background-color: #eeeeee;
+}
+h1{
+    width:70%;
+    margin:5px auto 5px auto;
+}

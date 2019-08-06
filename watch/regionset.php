@@ -1,0 +1,39 @@
+<?php
+if(isset($_GET["region"])){
+    if($_GET["region"]=="cn"){
+        $_SESSION["region"]="cn-shanghai";
+        $region="上海节点";
+        $other="日本节点";
+        $otheradd="./?region=global-jp";
+    }else if($_GET["region"]=="global-jp"){
+        $_SESSION["region"]="ap-northeast-1";
+        $region="日本节点";
+        $other="上海节点";
+        $otheradd="./?region=cn";
+    }else{
+        $_SESSION["region"]="cn-shanghai";
+        $region="上海节点";
+        $other="日本节点";
+        $otheradd="./?region=global-jp";
+    }
+}else if(isset($_SESSION["region"])){
+    if($_SESSION["region"]=="cn-shanghai"){
+        $region="上海节点";
+        $other="日本节点";
+        $otheradd="./?region=global-jp";
+    }else if($_SESSION["region"]=="ap-northeast-1"){
+        $region="日本节点";
+        $other="上海节点";
+        $otheradd="./?region=cn";
+    }else{
+        $_SESSION["region"]="cn-shanghai";
+        $region="上海节点";
+        $other="日本节点";
+        $otheradd="./?region=global-jp";
+    }
+}else{
+    $_SESSION["region"]="cn-shanghai";
+    $region="上海节点";
+    $other="日本节点";
+    $otheradd="./?region=global-jp";
+}
